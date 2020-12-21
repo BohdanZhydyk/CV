@@ -1,0 +1,20 @@
+
+{
+  "flex": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "wrap": {
+    "flexWrap": "wrap"
+  },
+  "stretch": {
+    "flexStretch": "stretch"
+  },
+  "start": {
+    "justifyContent": "flex-start"
+  },
+  "end": {
+    "justifyContent": "flexEnd"
+  }
+}
