@@ -12,3 +12,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*#06f Medium Devices, Desktops*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {font-size:1.3vw;}
+}
+
+/*#f08 Small Devices, Tablets, Smartphones*/
+@media (min-width: 481px) and (max-width: 767px) {
+  body {font-size:2vw;}
+}
+
+/*#f08 Small Devices, Tablets, Smartphones*/
+@media (max-width: 481px) {
+  body {font-size:3vw;}
+}

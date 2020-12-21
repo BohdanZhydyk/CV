@@ -20,11 +20,12 @@ const useStyles = createUseStyles({
     width:'100%',
     display:'flex',
     justifyContent:'center',
-    fontSize:'2vw',
+    fontSize:'150%',
     padding:'0.5vw 0'
   },
   img:{
     width:'25vw',
+    minWidth:'200px',
     margin:'1vw 0',
     borderRadius:'0.5vw'
   }

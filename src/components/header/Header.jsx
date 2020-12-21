@@ -8,7 +8,7 @@ const useStyles = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     padding:'1vw 0',
-    fontSize:'2vw',
+    fontSize:'200%',
     fontWeight:'bold',
     borderTop:'2px solid #999',
     borderBottom:'2px solid #999',

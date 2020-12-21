@@ -29,13 +29,11 @@ const useStyles = createUseStyles({
     width:'100%',
     display:'flex',
     alignItems:'center',
-    '&:hover':{
-      boxShadow:'inset 0 0 0.5vw 0.2vw #999',
-      fontSize:'110%',
-    }
+    flexWrap:'wrap',
   },
   img:{
     width:'1.5vw',
+    minWidth:'20px',
     margin:'0.2vw 1vw',
     padding:'0.5vw',
     borderRadius:'50%',

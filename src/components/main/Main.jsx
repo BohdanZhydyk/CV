@@ -27,6 +27,18 @@ const useStyles = createUseStyles({
     justifyContent:'center',
     alignItems:'flex-start',
     flexWrap:'wrap',
+  },
+  '@media (orientation: portrait)': {
+    main:{
+      flexDirection:'column',
+      alignItems:'center',
+    },
+    mainL:{
+      width:'98%'
+    },
+    mainR:{
+      width:'98%'
+    }
   }
 })
 
