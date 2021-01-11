@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { createUseStyles } from 'react-jss'
+import classNames from 'classnames'
+
 import { InfoParagraph } from './InfoParagraph'
 import { InfoImg } from './InfoImg'
 import { InfoA } from './InfoA'
@@ -7,7 +9,6 @@ import { InfoA } from './InfoA'
 
 const useStyles = createUseStyles({
   data:{
-    width:'95%',
     margin:'0.5vw 0',
     padding:'0.5vw 0',
     display:'flex',

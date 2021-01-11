@@ -1,5 +1,7 @@
 import * as React from 'react'
 import {createUseStyles} from 'react-jss'
+import classNames from 'classnames'
+
 import { Photo } from './Photo'
 import { DataContainer } from './DataContainer'
 import { InfoContainer } from './InfoContainer'
@@ -7,38 +9,16 @@ import { InfoContainer } from './InfoContainer'
 
 const useStyles = createUseStyles({
   main:{
-    display:'flex',
-    justifyContent:'center',
-    alignItems:'stretch',
     padding:'0.5vw 0',
+    alignItems:'flex-start'
   },
   mainL:{
     width:'35%',
-    margin:'0.5vw 0',
-    display:'flex',
-    justifyContent:'center',
-    alignItems:'flex-start',
-    flexWrap:'wrap',
+    padding:'0.5vw',
   },
   mainR:{
     width:'60%',
-    margin:'0.5vw 0',
-    display:'flex',
-    justifyContent:'center',
-    alignItems:'flex-start',
-    flexWrap:'wrap',
-  },
-  '@media (orientation: portrait)': {
-    main:{
-      flexDirection:'column',
-      alignItems:'center',
-    },
-    mainL:{
-      width:'98%'
-    },
-    mainR:{
-      width:'98%'
-    }
+    padding:'0.5vw',
   }
 })
 
@@ -46,24 +26,24 @@ export const Main = ({ data: {photo, containers, informations} })=>{
 
   const classes = useStyles()
 
+  let mapContainers = containers.map( (container, index) =>
+    <DataContainer data={container} key={container.name + index} />
+  )
+
+  let mapInformations = informations.map( (info, index)=>
+    <InfoContainer data={info} key={info.name + index} />
+  )
+
   return (
-    <main className={classes.main}>
+    <main className={ classNames({ [classes.main]:true, 'flex':true }) }>
       
-      <div className={classes.mainL}>
+      <div className={ classNames({ [classes.mainL]:true, 'flex':true, 'wrap':true }) }>
         <Photo data={photo} />
-        {
-          containers.map( (container, index) =>
-            <DataContainer data={container} key={container.name + index} />
-          )
-        }
+        { mapContainers }
       </div>
 
-      <div className={classes.mainR}>
-        {
-          informations.map( (info, index)=>
-            <InfoContainer data={info} key={info.name + index} />
-          )
-        }
+      <div className={ classNames({ [classes.mainR]:true, 'flex':true, 'wrap':true }) }>
+        { mapInformations }
       </div>
 
     </main>

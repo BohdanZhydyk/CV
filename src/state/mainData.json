@@ -9,25 +9,6 @@
       "name": "DANE OSOBISTE",
       "lines": [
         {
-          "key": "tel",
-          "value": "+48 667 927 157",
-          "link": "tel:+48667927157"
-        },
-        {
-          "key": "e-mail",
-          "value": "bzua83@gmail.com",
-          "link": "mailto: bzua83@gmail.com"
-        },
-        {
-          "key": "location",
-          "value": "84-200 Wejherowo, Pomorskie, Polska"
-        },
-        {
-          "key": "web-site",
-          "value": "bzDrive.com",
-          "link": "http://bzDrive.com"
-        },
-        {
           "key": "LinkedIn",
           "value": "in/bohdan-zhydyk",
           "link": "https://www.linkedin.com/in/bohdan-zhydyk"
@@ -36,6 +17,25 @@
           "key": "GitHub",
           "value": "github.com/BohdanZhydyk",
           "link": "https://github.com/BohdanZhydyk"
+        },
+        {
+          "key": "web-site",
+          "value": "bzDrive.com",
+          "link": "http://bzDrive.com"
+        },
+        {
+          "key": "e-mail",
+          "value": "bzua83@gmail.com",
+          "link": "mailto: bzua83@gmail.com"
+        },
+        {
+          "key": "tel",
+          "value": "+48 667 927 157",
+          "link": "tel:+48667927157"
+        },
+        {
+          "key": "location",
+          "value": "84-200 Wejherowo, Pomorskie"
         }
       ]
     },
@@ -222,25 +222,6 @@
         {
           "key": "img",
           "value": ["React.js", "Node.js", "JSS"]
-        }
-      ]
-    },
-    {
-      "name": "INNE PROJEKTY",
-      "tags": [
-        {
-          "key": "a",
-          "name": "A Bit Of Help",
-          "site": "https://abitofhelp.com",
-          "github": "https://github.com/????????"
-        },
-        {
-          "key": "p",
-          "value": "some description...some description...some description...some description...some description...some description...some description...some description...some description...some description...some description...some description...some description...some description..."
-        },
-        {
-          "key": "img",
-          "value": ["HTML", "CSS", "MySQL", "PHP", "JavaScript", "jQuery"]
         }
       ]
     },

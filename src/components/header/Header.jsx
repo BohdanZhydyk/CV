@@ -1,12 +1,10 @@
 import * as React from 'react'
-import {createUseStyles} from 'react-jss'
+import { createUseStyles } from 'react-jss'
+import classNames from 'classnames'
 
 
 const useStyles = createUseStyles({
   header:{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
     padding:'1vw 0',
     fontSize:'200%',
     fontWeight:'bold',
@@ -24,7 +22,7 @@ export const Header = ({data})=>{
   const classes = useStyles()
 
   return (
-    <header className={classes.header}>
+    <header className={ classNames({ [classes.header]:true, 'flex':true })}>
       {data.author}
     </header>
   )

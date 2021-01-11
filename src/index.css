@@ -13,17 +13,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*#06f Medium Devices, Desktops*/
+.flex     {display:flex; justify-content:center; align-items:center;}
+.column   {flex-direction:column;}
+.stretch  {align-items:stretch;}
+.wrap     {flex-wrap:wrap;}
+.start    {justify-content:flex-start;}
+.end      {justify-content:flex-end;}
+
+/*Medium Devices, Desktops*/
 @media (min-width: 768px) and (max-width: 1024px) {
   body {font-size:1.3vw;}
 }
 
-/*#f08 Small Devices, Tablets, Smartphones*/
+/*Small Devices, Tablets, Smartphones*/
 @media (min-width: 481px) and (max-width: 767px) {
   body {font-size:2vw;}
 }
 
-/*#f08 Small Devices, Tablets, Smartphones*/
+/*Small Devices, Tablets, Smartphones*/
 @media (max-width: 481px) {
   body {font-size:3vw;}
 }
+
+/*Printers*/
+@media print {
+  body {font-size:10px;}
+} 

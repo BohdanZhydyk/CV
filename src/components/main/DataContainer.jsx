@@ -1,15 +1,13 @@
 import * as React from 'react'
 import { createUseStyles } from 'react-jss'
+import classNames from 'classnames'
 
 
 const useStyles = createUseStyles({
   data:{
-    width:'95%',
+    width:'100%',
     margin:'0.5vw 0',
     padding:'0.5vw 0',
-    display:'flex',
-    justifyContent:'center',
-    flexWrap:'wrap',
     border:'1px solid #999',
     borderRadius:'0.5vw',
     boxShadow:'0 0 0.5vw 0.2vw #999',
@@ -27,9 +25,6 @@ const useStyles = createUseStyles({
   },
   line:{
     width:'100%',
-    display:'flex',
-    alignItems:'center',
-    flexWrap:'wrap',
   },
   img:{
     width:'1.5vw',
@@ -43,7 +38,16 @@ const useStyles = createUseStyles({
     width:'20%',
   },
   value:{
+    width:'60%',
     color:'#f00',
+  },
+  '@media print': {
+    img:{
+      display:'none'
+    },
+    value:{
+      textDecoration:'none'
+    },
   }
 })
 
@@ -52,12 +56,12 @@ export const DataContainer = ({ data: {name, lines} })=>{
   const classes = useStyles()
 
   return (
-    <div className={classes.data}>
+    <div className={ classNames({ [classes.data]:true, 'flex':true, 'wrap':true }) }>
       <div className={classes.name}>{name}</div>
       {
         lines.map( (line, index)=>{
           return (
-            <div className={classes.line} key={line.key + index}>
+            <div className={ classNames({ [classes.line]:true, 'flex':true, 'wrap':true }) } key={line.key + index}>
               <img className={classes.img} src={`https://oldapi.bzdrive.com/img/CV/ico/${line.key}.png`} alt="img"/>
               <span className={classes.key}>{line.key}</span>
               {

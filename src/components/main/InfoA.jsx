@@ -32,6 +32,24 @@ const useStyles = createUseStyles({
   img:{
     width:'2vw',
     margin:'0 0.5vw 0 0',
+  },
+  '@media print': {
+    siteItem:{
+      backgroundColor:'#fff0'
+    },
+    siteLink:{
+      color:'#000',
+      fontWeight:'bold',
+      textDecoration:'none'
+    },
+    githubLink:{
+      color:'#000',
+      fontWeight:'bold',
+      textDecoration:'none'
+    },
+    img:{
+      display:'none'
+    },
   }
 })
 
