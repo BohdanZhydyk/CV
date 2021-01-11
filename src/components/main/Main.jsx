@@ -19,6 +19,20 @@ const useStyles = createUseStyles({
   mainR:{
     width:'60%',
     padding:'0.5vw',
+  },
+  '@media (min-width: 481px) and (max-width: 767px)': {
+    main:{
+      flexDirection:'column',
+      padding:'0.5vw 2vw'
+    },
+    mainL:{
+      width:'100%',
+      padding:'0.5vw',
+    },
+    mainR:{
+      width:'100%',
+      padding:'0.5vw',
+    },
   }
 })
 
