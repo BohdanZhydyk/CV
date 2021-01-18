@@ -1,63 +1,30 @@
 import * as React from 'react'
-import {createUseStyles} from 'react-jss'
-import classNames from 'classnames'
+import './Main.scss'
 
-import { Photo } from './Photo'
-import { DataContainer } from './DataContainer'
-import { InfoContainer } from './InfoContainer'
+import { Photo } from './Photo/Photo'
+import { ContainerL } from './ContainerL/ContainerL'
+import { ContainerR } from './ContainerR/ContainerR'
 
-
-const useStyles = createUseStyles({
-  main:{
-    padding:'0.5vw 0',
-    alignItems:'flex-start'
-  },
-  mainL:{
-    width:'35%',
-    padding:'0.5vw',
-  },
-  mainR:{
-    width:'60%',
-    padding:'0.5vw',
-  },
-  '@media (min-width: 481px) and (max-width: 767px)': {
-    main:{
-      flexDirection:'column',
-      padding:'0.5vw 2vw'
-    },
-    mainL:{
-      width:'100%',
-      padding:'0.5vw',
-    },
-    mainR:{
-      width:'100%',
-      padding:'0.5vw',
-    },
-  }
-})
 
 export const Main = ({ data: {photo, containers, informations} })=>{
-
-  const classes = useStyles()
-
-  let mapContainers = containers.map( (container, index) =>
-    <DataContainer data={container} key={container.name + index} />
-  )
-
-  let mapInformations = informations.map( (info, index)=>
-    <InfoContainer data={info} key={info.name + index} />
-  )
-
   return (
-    <main className={ classNames({ [classes.main]:true, 'flex':true }) }>
+    <main className="flex stretch" >
       
-      <div className={ classNames({ [classes.mainL]:true, 'flex':true, 'wrap':true }) }>
+      <div className="mainL" >
         <Photo data={photo} />
-        { mapContainers }
+        {
+          containers.map( (container, index) =>
+            <ContainerL data={container} key={container.name + index} />
+          )
+        }
       </div>
 
-      <div className={ classNames({ [classes.mainR]:true, 'flex':true, 'wrap':true }) }>
-        { mapInformations }
+      <div className="mainR" >
+        {
+          informations.map( (info, index)=>
+            <ContainerR data={info} key={info.name + index} />
+          )
+        }
       </div>
 
     </main>

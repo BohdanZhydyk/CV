@@ -10,8 +10,8 @@
       "lines": [
         {
           "key": "LinkedIn",
-          "value": "in/bohdan-zhydyk",
-          "link": "https://www.linkedin.com/in/bohdan-zhydyk"
+          "value": "linkedin.com/in/bohdan-zhydyk",
+          "link": "https://linkedin.com/in/bohdan-zhydyk"
         },
         {
           "key": "GitHub",
@@ -51,7 +51,7 @@
           "value": ""
         },
         {
-          "key": "Material-UI",
+          "key": "SCSS",
           "value": ""
         },
         {
@@ -127,11 +127,11 @@
       "name": "O SOBIE",
       "tags": [
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Dwa lata temu zainteresowałem się programowaniem webowym. To stało się moim hobby, cały wolny czas poświęcam programowaniu. Wiedzę zdobywam samodzielnie ze źródeł internetowych oraz w praktyce podczas pisania własnych projektów. Nie kopiuję cudzych osiągnięć, staram się zbudować algorytm i osobiście napisać kod."
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "W programowaniu webowym widzę przyszłość i rozwój osobisty. Wiem, że nie mam doświadczenia komercyjnego w tej dziedzinie, ale wierzę, że umiejętność samodzielnego uczenia się połączona z pracą zespołową i chęć zdobywania nowych umiejętności, pozwoli szybko się rozwijać."
         }
       ]
@@ -140,13 +140,11 @@
       "name": "MOJE PROJEKTY",
       "tags": [
         {
-          "key": "a",
-          "name": "bzDrive.com",
-          "site": "https://bzdrive.com",
-          "github": "https://github.com/BohdanZhydyk/bzdrive.com"
+          "key": "link",
+          "name": "bzDrive.com"
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Jest to aplikacja webowa, w której otwierają się inne aplikację webowe, po kliknięciu odpowiedniego przycisku w menu głównym. Obecnie strona służy głównie do zamieszczania aktualności i informacji o moich projektach."
         },
         {
@@ -154,13 +152,11 @@
           "value": ["HTML", "CSS", "MySQL", "PHP", "JavaScript", "jQuery"]
         },
         {
-          "key": "a",
-          "name": "new.bzDrive.com",
-          "site": "https://new.bzdrive.com",
-          "github": "https://github.com/BohdanZhydyk/new.bzdrive.com"
+          "key": "link",
+          "name": "new.bzDrive.com"
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Jest to aplikacja webowa, w której otwierają się inne aplikację webowe, po kliknięciu odpowiedniego przycisku w menu głównym. Obecnie strona służy głównie do zamieszczania aktualności i informacji o moich projektach."
         },
         {
@@ -168,13 +164,11 @@
           "value": ["React.js", "Node.js", "JSS", "MySQL"]
         },
         {
-          "key": "a",
-          "name": "bistro.bzDrive.com",
-          "site": "https://bistro.bzdrive.com",
-          "github": "https://github.com/BohdanZhydyk/bistro.bzdrive.com"
+          "key": "link",
+          "name": "bistro.bzDrive.com"
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Pracuję nad własnym projektem dla restauracji. W przyszłości ma się rozwinąć w aplikację webową, która będzie zarówno stroną restauracji, jak i systemem do zarządzania bazą danych, pracownikami, zamówieniami i środkami."
         },
         {
@@ -182,13 +176,11 @@
           "value": ["React.js", "Node.js", "JSS", "MySQL"]
         },
         {
-          "key": "a",
-          "name": "api.bzDrive.com",
-          "site": "https://api.bzdrive.com",
-          "github": "https://github.com/BohdanZhydyk/api.bzdrive.com"
+          "key": "link",
+          "name": "api.bzDrive.com"
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Serwer, który będzie dostarczał informację dla powyższych projektów."
         },
         {
@@ -196,13 +188,11 @@
           "value": ["React.js", "Node.js", "JSS", "MySQL", "REST API", "Express.js"]
         },
         {
-          "key": "a",
-          "name": "oldapi.bzDrive.com",
-          "site": "https://oldapi.bzdrive.com",
-          "github": "https://github.com/BohdanZhydyk/oldapi.bzdrive.com"
+          "key": "link",
+          "name": "oldapi.bzDrive.com"
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Serwer, który dostarcza informację dla powyższych projektów."
         },
         {
@@ -210,18 +200,16 @@
           "value": ["HTML", "CSS", "MySQL", "PHP", "JavaScript", "jQuery"]
         },
         {
-          "key": "a",
-          "name": "cv.bzDrive.com",
-          "site": "https://cv.bzdrive.com",
-          "github": "https://github.com/BohdanZhydyk/cv.bzdrive.com"
+          "key": "link",
+          "name": "cv.bzDrive.com"
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "Wersja online mojego CV zawiera najbardziej aktualną informacje..."
         },
         {
           "key": "img",
-          "value": ["React.js", "Node.js", "JSS"]
+          "value": ["React.js", "Node.js", "SCSS"]
         }
       ]
     },
@@ -229,19 +217,19 @@
       "name": "INNE UMIEJĘTNOŚCI I ZAWODY",
       "tags": [
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "- Diagnostyka, naprawa, kodowanie, instalacja elektryki i elektroniki samochodowej."
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "- Montaż i obsługa domowych instalacji klimatyzacyjnych i wentylacyjnych."
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "- Projekt i instalacja elektryczności domowej."
         },
         {
-          "key": "p",
+          "key": "paragraph",
           "value": "- Instalacja i obsługa systemów Windows, Linux."
         }
       ]
